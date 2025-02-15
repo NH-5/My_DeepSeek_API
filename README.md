@@ -1,0 +1,3 @@
+使用DeepSeek API在非网页端用DeepSeek
+
+输入API后可以选择V3或R1使用
