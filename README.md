@@ -1,3 +1,5 @@
-使用DeepSeek API在非网页端用DeepSeek
+使用DeepSeek API在windows非网页端用DeepSeek
 
 输入API后可以选择V3或R1使用
+
+需要用户自己在Deepseek官方申请取得API后自己输入使用
