@@ -8,7 +8,7 @@ def R1(prompt, apikey):
         messages=[
             {'role': 'user', 'content':prompt}
         ],
-        stream=False
+        stream=True
         #temperature=1.0
         #可以设置temperature值,默认1.0,设置格式如上
         #如下是官方文档给出的建议参考数据
@@ -17,11 +17,15 @@ def R1(prompt, apikey):
         #通用对话:1.3
         #翻译:1.3
         #创意类写作/诗歌创作:1.5
-)
-    
-    print(response.choices[0].message.content)
+    )
+    for chunk in response:
+        content = chunk.choices[0].delta.content
+        if content:
+            print(content, end = '', flush = True)
+    print()
+    #print(response.choices[0].message.content)
 
 if __name__ == '__main__':
+    apikey = input("Your API Key here:")
     prompt = input('>>>')
-    apikey = 'sk-d7b2be184ea6488abc485a1d5ed8a41'
     R1(prompt,apikey)
