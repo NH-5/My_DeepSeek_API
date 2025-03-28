@@ -23,7 +23,7 @@ jobs:
       - name: Zip artifacts
         run: Compress-Archive -Path build/exe.* -DestinationPath deepseek-windows.zip
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: windows-build
           path: deepseek-windows.zip
@@ -45,7 +45,7 @@ jobs:
       - name: Zip artifacts
         run: zip -r deepseek-macos.zip build/exe.*
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: macos-build
           path: deepseek-macos.zip
@@ -67,7 +67,7 @@ jobs:
       - name: Zip artifacts
         run: zip -r deepseek-linux.zip build/exe.*
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-build
           path: deepseek-linux.zip
@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
