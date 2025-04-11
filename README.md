@@ -25,7 +25,7 @@
 
 2. 安装依赖：
    ```
-   pip install cx_Freeze openai
+   pip install -r requirements.txt
    ```
 
 3. 构建可执行文件：
