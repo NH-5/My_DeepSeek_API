@@ -13,13 +13,13 @@
 
 ### 预编译版本
 
-访问 [GitHub Releases](https://github.com/你的用户名/My_DeepSeek_API/releases) 下载最新版本的预编译可执行文件。
+访问 [GitHub Releases](https://github.com/NH-5/My_DeepSeek_API.git/releases) 下载最新版本的预编译可执行文件。
 
 ### 从源代码构建
 
 1. 克隆仓库：
    ```
-   git clone https://github.com/你的用户名/My_DeepSeek_API.git
+   git clone https://github.com/NH-5/My_DeepSeek_API.git
    cd My_DeepSeek_API
    ```
 
